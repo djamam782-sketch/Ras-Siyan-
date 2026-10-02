@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="logo.jpg">
+<title>École Ras Siyan — École bilingue à Djibouti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#accueil"><img alt="" src="logo.jpg"><b>École Ras Siyan</b></a>
+    <ul><li><a class="l" href="#accueil">Accueil</a></li><li><a class="l" href="#classes">Nos classes</a></li><li id="navauth"></li></ul>
+  </div>
+</nav>
+
+<header class="hero" id="accueil">
+  <div class="wrap">
+    <div>
+      <h1>Une école bilingue où chaque enfant s'épanouit</h1>
+      <p>École Ras Siyan à Djibouti : un enseignement en français et en anglais, de la petite section au CE1, dans un cadre engagé, épanouissant et inspirant.</p>
+      <div class="btns"><a class="btn p" href="#classes">Voir les classes</a><a class="btn s" href="#valeurs">Nos valeurs</a></div>
+    </div>
+    <div class="logo-box"><img alt="Logo de l'école Ras Siyan" src="logo.jpg"></div>
+  </div>
+</header>
+
+<div class="wrap values" id="valeurs">
+  <div class="val"><h3>Engagée</h3><p>Une équipe investie auprès de chaque élève et de sa famille.</p></div>
+  <div class="val"><h3>Épanouissante</h3><p>Un cadre où les enfants grandissent avec confiance.</p></div>
+  <div class="val"><h3>Inspirante</h3><p>Le goût d'apprendre en français et en anglais.</p></div>
+</div>
+
+<section class="classes" id="classes">
+  <div class="wrap">
+    <h2>Nos classes</h2>
+    <p class="lead">Choisissez une classe, puis ouvrez la fiche d'un élève en cliquant sur son nom.</p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="panel" id="panel" role="tabpanel"></div>
+  </div>
+</section>
+
+<dialog id="dlg"></dialog>
+<dialog id="adlg"></dialog>
+<footer>
+  <p><strong>École Ras Siyan</strong> — École bilingue, Djibouti</p>
+  <p id="mode"></p><p>Données confidentielles, réservées au personnel de l'école.</p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="app.js"></script>
+<script src="fb.js"></script>
+</body>
+</html>
